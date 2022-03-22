@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Proyectos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/StyleServicios.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Iván Coto Jiménez</h1>
+            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreMi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function () {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+
+        <section>
+            <h2 class="title">Servicios</h2>
+            <div class="container">
+
+                <div class="card">
+                    <img src="imagenes/pexels-luis-gomes-546819.jpg" alt=""/>
+                    <h4>Páginas web</h4>
+                    <p>
+                        ¿Tenés un sitio web donde tus clientes pueden observar tus servicios, tu profesiolismo y tus aspiraciones? Esta es tú solución, 
+                        consultá por nuestros diferentes planes y llevá tu negocio al siguiente nivel.
+                    </p>
+                    <a href="contacto.html">Más información</a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/pexels-luis-quintero-2148217.jpg" alt=""/>
+                    <h4>Aplicaciones de escritorio</h4>
+                    <p>
+                        Si tenés un negocio o empresa que tiene la necesidad de ser administrada de una forma automatizada, o bien brindar un mejor servicio
+                        no dudes en contactarnos para solucionar cualquier problema que lo amerite.
+                    </p>
+                    <a href="contacto.html">Más información</a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/pexels-martin-lopez-2225617.jpg" alt=""/>
+                    <h4>Servicio técnico</h4>
+                    <p>
+                        ¿Tu equipo presenta alguna falla técnica? O tenés la necesidad de instalar softwares necesarios para la correcta utilización de tu computadora, entonces
+                        ya encontraste la solución, ponte en contacto ya mismo.
+                    </p>
+                    <a href="contacto.html">Más información</a>
+                </div>
+
+            </div>
+        </section>
+</html>

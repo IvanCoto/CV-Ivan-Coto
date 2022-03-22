@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ivan Coto Jimenez</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/styleIndex.css" rel="stylesheet" type="text/css"/>
+        <link href="css/img.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <header>
+            <h1>Iván Coto Jiménez</h1>
+            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreMi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function () {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+
+        <section>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="imagenes/pexels-luis-gomes-546819.jpg" style="width:100%"/>
+                    <div class="text">Systems engineer</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="imagenes/_MG_0035.jpg" style="width:100%"/>
+                    <div class="text">Taekwondo teacher</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="imagenes/pexels-luis-quintero-2148217.jpg" style="width:100%"/>
+                    <div class="text">Web designer</div>
+                </div>
+
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+            </script>
+        </section>
+
+    </body>
+</html>

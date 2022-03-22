@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Estudios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styleEstudios.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Iván Coto Jiménez</h1>
+            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreMi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function () {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+        <br>
+        <section>
+            <h2 class="subTitulo">Sobre mí</h2>
+            <div class="container">
+                <img src="imagenes/Foto pasaporte.PNG" alt="foto pasaporte" />
+                <p class="parrafo">
+                    Estos han sido años de muchos obstáculos donde he tenido que aprender a vivir con ellos o sobrepasarlos. Ha surgido una idea propia de superación
+                    con la creación de un sitio web como este, donde compartiré información sobre mí y los servicios que puedo brindar. <br>
+                    Mi nombre es Iván Coto Jiménez, estudiante actual de la carrera de ingenieria en sistemas, inicié mi formación como ingeniero en la Universidad 
+                    Fidélitas en el año 2021, sin embargo, desde un tiempo atrás se despertaron en mí esas ganas de aprender cosas nuevas cada día, de investigar
+                    y mejorar sobre los diversos temas que conlleva una carrera como esta. Es por esto que hasta la fecha he llevado diferentes cursos como,
+                    programación orientada a objetos, Java, Python, HTML, CSS, JavaScript, NodeJS, JQuery, PHP, MySQL, CISCO, electrónica digital, diseño UI-UX 
+                    y la metodología SCRUMestos los he llevado a cabo en diferentes insituciones, tales como, el Tecnológico de Costa Rica, Udemy y Universidad Fidélitas. 
+                    Te adjunto mi curriculum vitae: <a href="documentos/CV Iván Coto Jiménez.pdf" target="_blank">Currriculum Vitae - Iván Coto Jiménez.</a><br>
+                    <br>
+                    Además de la formación como ingeniero, también soy atleta, profesor de Taekwondo segundo Dan y ex-seleccionado nacional, he pertenecido 
+                    a este hermoso deporte desde los 4 años y he tenido la oportunidad de participar en diferentes camponatos nacionales e internacionales 
+                    donde he obtenido excelentes resultados, también gracias a que me he preparado en diferentes artes, he desarrollado la habilidad de la disciplina, de aceptar retos,
+                    de ser una persona organizada y enfocada en mis metas.<br>
+                    <br>
+                    Hoy en día una página web o un sistema de control de tu empresa puede ser la solución a tus problemas, todos los sericios los puedes encontrar en la
+                    pestaña de <a href="servicios.html"> servicios </a> y obtener más información.<br>
+                    <br>
+                    ¡Sigue adelante con tus sueños, no te detengas hasta obtener lo que quieres si eso es para tu bien y tu futuro!                
+                </p>
+            </div>
+        </section>
+</html>

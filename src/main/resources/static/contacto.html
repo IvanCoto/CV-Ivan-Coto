@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/StyleContacto.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Iván Coto Jiménez</h1>
+            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreMi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function () {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+
+        <section class="buttons">
+            <a href="https://www.instagram.com/invites/contact/?i=kqpa9jgfhms5&utm_content=tyi6u9" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://wa.me/+50685592166" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="https://www.linkedin.com/in/ivancototkd/" target="_blank" class="fa fa-linkedin"></a>
+        </section>
+
+        <!--<section class="form-register">
+            <h4 style="text-align: center">¡Contáctenos!</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="tel" name="telefono" id="apellidos" placeholder="Ingrese su némero telefónico">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo electrónico">
+            <textarea class="controls" name="message" rows="10" cols="30" placeholder="Ingresa tu mensaje"></textarea>
+            <input class="botons" type="submit" value="Enviar mensaje">
+        </section>-->
+        <footer>
+
+            <div class="container-footer-all">
+
+                <div class="container-body">
+
+                    <div class="colum1">
+                        <h1>Más información</h1>
+
+                        <p>Mi nombre es Iván Coto Jiménez, actualmente estudio ingenieria en sistemas y
+                            en esta página te muestro mi perfil y algunos de los servicios que brindo</p>
+
+                    </div>
+
+                    <div class="colum2">
+
+                        <h1>Redes Sociales</h1>
+
+                        <div class="row">
+                            <div class="buttonsf">
+                                <a href="https://www.instagram.com/invites/contact/?i=kqpa9jgfhms5&utm_content=tyi6u9" target="_blank" class="fa fa-instagram"></a>
+                            </div>
+                            <label>Siguenos en Instagram</label>
+                        </div>
+                        <div class="row">
+                            <div class="buttonsf">
+                                <a href="https://wa.me/+50685592166" target="_blank" class="fa fa-whatsapp"></a>
+                            </div>
+                            <label>Escribenos</label>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="colum3">
+
+                        <h1>Información Contacto</h1>
+
+                        <div class="row2">
+                            <img src="imagenes/house.png" alt=""/>
+                            <label>Costa Rica, Cartago</label>
+                        </div>
+
+                        <div class="row2">
+                            <img src="imagenes/smartphone.png" alt=""/>
+                            <label>+506 8559-2166</label>
+                        </div>
+
+                        <div class="row2">
+                            <img src="imagenes/contact.png" alt=""/>
+                            <label>ivancototkd@gmail.com</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="copyright">
+                        © 2022 Todos los Derechos Reservados | <a href="sobreMi.html">Iván Coto</a>
+                    </div>
+                </div>
+
+            </div>    
+        </footer> 
+
+
+</html>
