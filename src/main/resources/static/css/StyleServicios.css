@@ -62,3 +62,11 @@ section{
     text-decoration: none;
     color: #3498db;
 }
+
+
+@media screen and (max-width: 768px){
+    .container{
+        overflow-y: scroll;
+       display: list-item;
+    }
+}
