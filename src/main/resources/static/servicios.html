@@ -1,77 +1,168 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<!doctype html>
+<html lang="en">
+
     <head>
-        <title>Proyectos</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
-        <link href="css/StyleServicios.css" rel="stylesheet" type="text/css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Servicios</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/boot.css" rel="stylesheet" type="text/css"/>
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+
+
+        <!-- Custom styles for this template -->
+        <link href="css/pricing.css" rel="stylesheet" type="text/css"/>
     </head>
+
     <body>
-        <header>
-            <h1>Iván Coto Jiménez</h1>
-            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre mí</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="hide">
-                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    </svg>
+
+
+    <header>
+        <h1>Iván Coto Jiménez</h1>
+        <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="lista"><a href="index.html">Inicio</a></li>
+            <li class="lista"><a href="sobreMi.html">Sobre mí</a></li>
+            <li class="lista"><a href="servicios.html">Servicios</a></li>
+            <li class="lista"><a href="deportes.html">Trayectoria Deportiva</a></li>
+            <li class="lista"><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="hide">
+            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(".hide").on('click', function () {
+            $("nav ul").toggle('slow');
+        })
+    </script>
+
+    <div class="container py-3">
+
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Clases privadas</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$18<small class="text-muted fw-light">/clase</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Clases personalizadas</li>
+                                <li>Hasta su hogar, ó bien</li>
+                                <li>En nuestras instalaciones</li>
+                                <li>Taekwondo, funcionales</li>
+                                <li>Defensa Personal, boxeo</li>
+                            </ul>
+                            <a href="https://wa.me/+50685592166" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Consultá por whatsApp</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Servicio técnico</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">Consultá el precio</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Reparación de equipo</li>
+                                <li>Ensamblaje de computadoras</li>
+                                <li>Instalación de software</li>
+                                <li>Limpieza de equipos</li>
+                                <li>Revisión general</li>
+                            </ul>
+                            <a href="https://wa.me/+50685592166" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Solicitá una cotización</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Aplicaciones Web</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">Consultá el precio</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Software administrativo</li>
+                                <li>Totalmente personalizado</li>
+                                <li>Excelente seguridad</li>
+                                <li>Diseño altamente estetico</li>
+                                <li>¡Actualizaciones gratuitas!</li>
+                            </ul>
+                            <a href="https://wa.me/+50685592166" target="_blank"><button type="button" class="w-100 btn btn-lg btn-primary">Solicitá una cotización</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script>
-            $(".hide").on('click', function () {
-                $("nav ul").toggle('slow');
-            })
-        </script>
+        </main>
 
-        <section>
-            <h2 class="title">Servicios</h2>
-            <div class="container">
-
-                <div class="card">
-                    <img src="imagenes/pexels-luis-gomes-546819.jpg" alt=""/>
-                    <h4>Páginas web</h4>
-                    <p>
-                        ¿Tenés un sitio web donde tus clientes pueden observar tus servicios, tu profesiolismo y tus aspiraciones? Esta es tú solución, 
-                        consultá por nuestros diferentes planes y llevá tu negocio al siguiente nivel.
-                    </p>
-                    <a href="contacto.html">Más información</a>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a>Iván Coto Jiménez</a>
+                    <small class="d-block mb-3 text-muted">&copy; 2022</small>
                 </div>
-
-                <div class="card">
-                    <img src="imagenes/pexels-luis-quintero-2148217.jpg" alt=""/>
-                    <h4>Aplicaciones de escritorio</h4>
-                    <p>
-                        Si tenés un negocio o empresa que tiene la necesidad de ser administrada de una forma automatizada, o bien brindar un mejor servicio
-                        no dudes en contactarnos para solucionar cualquier problema que lo amerite.
-                    </p>
-                    <a href="contacto.html">Más información</a>
+                <div class="col-6 col-md">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" class="fa fa-instagram" href="https://www.instagram.com/ivancoto08/" target="_blank"> Instagram</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://wa.me/+50685592166" target="_blank">WhatsApp</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/ivancototkd/" target="_blank">Linkedin</a></li>
+                    </ul>
                 </div>
-
-                <div class="card">
-                    <img src="imagenes/pexels-martin-lopez-2225617.jpg" alt=""/>
-                    <h4>Servicio técnico</h4>
-                    <p>
-                        ¿Tu equipo presenta alguna falla técnica? O tenés la necesidad de instalar softwares necesarios para la correcta utilización de tu computadora, entonces
-                        ya encontraste la solución, ponte en contacto ya mismo.
-                    </p>
-                    <a href="contacto.html">Más información</a>
+    
+                <div class="col-6 col-md">
+                    <h5>Información Contacto</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none">Costa Rica, Cartago</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none">+506 8559-2166</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none">ivancototkd@gmail.com</a></li>
+                    </ul>
                 </div>
-
             </div>
-        </section>
+        </footer>
+    </div>
+
+</body>
+
 </html>

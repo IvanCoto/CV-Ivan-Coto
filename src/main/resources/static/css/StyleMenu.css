@@ -31,7 +31,7 @@ ul li {
 }
 
 ul li:hover {
-    background: #112d4e;
+    background: transparent;
 }
 
 ul li a {
