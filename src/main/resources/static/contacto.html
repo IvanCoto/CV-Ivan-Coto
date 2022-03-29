@@ -9,46 +9,134 @@
         <link href="css/StyleContacto.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="imagenes/Flyer2022Mesa-de-trabajo-2_2x.ico">
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/boot.css" rel="stylesheet" type="text/css"/>
+
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+
+
+        <!-- Custom styles for this template -->
+        <link href="css/pricing.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
-        <header>
-            <h1>Iván Coto Jiménez</h1>
-            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
-        </header>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    </svg>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre mí</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="hide">
-                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+    <header>
+        <h1>CI-TECHNOLOGY</h1>
+        <i><h2 style="font-size: medium">Grow together!</h2></i>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobreMi.html">Sobre mí</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="hide">
+            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(".hide").on('click', function () {
+            $("nav ul").toggle('slow');
+        })
+    </script>
+
+    <section>
+        <div style="text-align: center">
+            <h2 >Página de contacto en mantenimiento, mientras tanto usa nuestras redes sociales para contacternos</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a style="margin: 35px" href="https://wa.me/+50685592166" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                </svg></a>
+            <a style="margin: 35px" href="https://www.instagram.com/ivancoto08/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- AUN EN CONFIGURACION
+    <section class="form-register">
+        <h4 style="text-align: center">¡Ponte en contacto!</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <textarea class="controls" name="message" rows="10" cols="30" placeholder="Ingresa tu mensaje"></textarea>
+        <input class="botons" type="submit" value="Enviar mensaje">
+    
+    </section>
+    -->
+
+    <br>
+    <br>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <a style="margin-left: 20px;">CI-Technology</a>
+                <small class="d-block mb-3 text-muted" style="margin-left: 20px">&copy; 2022</small>
             </div>
-        </nav>
+            <div class="col-6 col-md">
+                <h5>Redes sociales</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" class="fa fa-instagram" href="https://www.instagram.com/ivancoto08/" target="_blank"> Instagram</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://wa.me/+50685592166" target="_blank">WhatsApp</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/ivancototkd/" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script>
-            $(".hide").on('click', function () {
-                $("nav ul").toggle('slow');
-            })
-        </script>
+            <div class="col-6 col-md">
+                <h5>Información Contacto</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none">Costa Rica, Cartago</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="tel:+506 8559 2166">+506 8559-2166</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none">ivancototkd@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        <section class="buttons">
-            <a href="https://www.instagram.com/ivancototkd/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://wa.me/+50685592166" target="_blank" class="fa fa-whatsapp"></a>
-            <a href="https://www.linkedin.com/in/ivancototkd/" target="_blank" class="fa fa-linkedin"></a>
-        </section>
-
-        <!--<section class="form-register">
-            <h4 style="text-align: center">¡Contáctenos!</h4>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-            <input class="controls" type="tel" name="telefono" id="apellidos" placeholder="Ingrese su némero telefónico">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo electrónico">
-            <textarea class="controls" name="message" rows="10" cols="30" placeholder="Ingresa tu mensaje"></textarea>
-            <input class="botons" type="submit" value="Enviar mensaje">
-        </section>-->
-       
 </html>

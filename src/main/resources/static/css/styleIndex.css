@@ -152,7 +152,7 @@ ul li a {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .2
     }
     to {
         opacity: 1
@@ -161,7 +161,7 @@ ul li a {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .2
     }
     to {
         opacity: 1

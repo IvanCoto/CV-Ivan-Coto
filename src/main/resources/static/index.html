@@ -2,18 +2,64 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ivan Coto Jimenez</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/styleIndex.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Ivan Coto Jimenez</title>        
         <link href="css/img.css" rel="stylesheet" type="text/css"/>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+        <link href="css/StyleMenu.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="imagenes/Flyer2022Mesa-de-trabajo-2_2x.ico">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/boot.css" rel="stylesheet" type="text/css"/>
+        
+   
+
+
+
+	<style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+
+
+        <!-- Custom styles for this template -->
+        <link href="css/pricing.css" rel="stylesheet" type="text/css"/>
+        
+        
+        
+    </head>
+
+    <body>
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    </svg>
     </head>
     <body>
 
         <header>
-            <h1>Iván Coto Jiménez</h1>
-            <h2 style="font-size: medium">Ingeniero en sistemas</h2>
+            <h1>CI-TECHNOLOGY</h1>
+            <i><h2 style="font-size: medium">Grow together!</h2></i>
         </header>
 
         <nav>
@@ -21,7 +67,6 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobreMi.html">Sobre mí</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="deportes.html">Trayectoria Deportiva</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div class="hide">
@@ -49,14 +94,14 @@
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="imagenes/_MG_0035.jpg" style="width:100%"/>
-                    <div class="text">Taekwondo teacher</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
                     <img src="imagenes/pexels-luis-quintero-2148217.jpg" style="width:100%"/>
                     <div class="text">Web designer</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="imagenes/pexels-pixabay-39284.jpg" style="width:100%"/>
+                    <div class="text">Desktop aplication</div>
                 </div>
 
             </div>
@@ -84,10 +129,37 @@
                         slideIndex = 1
                     }
                     slides[slideIndex - 1].style.display = "block";
-                    setTimeout(showSlides, 4000); // Change image every 2 seconds
+                    setTimeout(showSlides, 1500); // Change image every 2 seconds
                 }
             </script>
         </section>
+        
+        
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a style="margin-left: 20px">CI-Technology</a>
+                    <small class="d-block mb-3 text-muted" style="margin-left: 20px">&copy; 2022</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" class="fa fa-instagram" href="https://www.instagram.com/ivancoto08/" target="_blank"> Instagram</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://wa.me/+50685592166" target="_blank">WhatsApp</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/ivancototkd/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <h5>Información Contacto</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none">Costa Rica, Cartago</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="tel:+506 8559 2166">+506 8559-2166</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none">ivancototkd@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </body>
 </html>
